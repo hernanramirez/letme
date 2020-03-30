@@ -1,0 +1,17 @@
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>provider</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for libro in Parkings %}
+        <tr>
+          <td>{{ libro.name }}</td>
+          <td>{{ libro.provider }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>

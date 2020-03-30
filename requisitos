@@ -1,7 +1,0 @@
-pip install mongoengine==0.8.0
-pip install pymongo==3.5.1
-Django version 2.2.10,
-
-Aqui tienes acceso a la base de datos de parkings como mencionaba:
-
-mongodb+srv://students:a428PmHV6DzfPMnk@mongodb-cluster-us-east-1-yuln1.mongodb.net/
