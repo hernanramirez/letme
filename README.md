@@ -28,7 +28,7 @@ Entrar en el directorio de la aplicación Django
 pip install -r requirements.txt
 ```
 
-Cambiar en el setting
+Cambiar en el setting con tu conexión a la base de datos mongo
 
 ```python
 DATABASES = {
@@ -63,7 +63,11 @@ DATABASES = {
 Ejecutar
 
 ```shell
-./manage.py
+./manage.py run server
 ```
+
+Deberias ver el listado en:
+
+http://127.0.0.1:8000/p/
 
 
