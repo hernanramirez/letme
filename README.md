@@ -1,15 +1,36 @@
-README
+# Configuracion para conexion Mongo DB
 
-Hacer pull del repositorio
+## Hacer pull del repositorio
 
-Crear un virtual env con Pyrhon3
+```shell
+git pull
+```
 
-Activar el Virtual Env
+## Crear un virtualenv con Pyrhon3
 
-Instalar los paquetes
+### Crear un virtualenv fuera del repositorio
+
+```shell
+virtualenv -p python3 venv_letme
+```
+ 
+### Activar el Virtual Env
+
+```shell
+source venv_letme/bin/activate
+```
+
+### Instalar los paquetes
+
+Entrar en el directorio de la aplicación Django
+
+```shell
+pip install -r requirements.txt
+```
 
 Cambiar en el setting
 
+```python
 DATABASES = {
     'default': {
         'ENGINE': 'djongo',
@@ -29,17 +50,20 @@ DATABASES = {
         }
     },
 }
+```
 
 
-
-Hacer
-
-makemigrations
-migrate
+### Hacer las migraciones
+	
+```shell
+./manage.py makemigrations
+./manage.py migrate
+```
 
 Ejecutar
 
-./ma runsrver
-
+```shell
+./manage.py
+```
 
 
